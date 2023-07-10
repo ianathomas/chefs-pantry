@@ -1,2 +1,0 @@
-class MyPantry < ApplicationRecord
-end

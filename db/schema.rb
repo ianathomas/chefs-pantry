@@ -22,7 +22,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_10_171355) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "my_pantries", force: :cascade do |t|
+  create_table "my_pantry_items", force: :cascade do |t|
     t.integer "ingredient_id"
     t.integer "user_id"
     t.string "amount"
