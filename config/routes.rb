@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   # root "articles#index"
   post "/users" => "users#create"
   post "/sessions" => "sessions#create"
-  post "/ingredient" => "ingredients#create"
+  post "/ingredient" => "ingredient#create"
 
   get "/ingredient" => "ingredient#show"
   get "/ingredients" => "ingredients#index"
