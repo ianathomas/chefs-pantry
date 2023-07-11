@@ -1,6 +1,6 @@
-json.id photo.id
-json.name photo.name
-json.width photo.width
-json.height photo.height
-json.created_at photo.created_at
-json.updated_at photo.updated_at
+json.id ingredient.id
+json.name ingredient.name
+json.ingredient_type ingredient.ingredient_type
+json.image_url ingredient.image_url
+json.created_at ingredient.created_at
+json.updated_at ingredient.updated_at

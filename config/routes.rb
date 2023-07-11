@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   post "/sessions" => "sessions#create"
   post "/ingredient" => "ingredient#create"
 
-  get "/ingredient" => "ingredient#show"
+  get "/ingredient/:id" => "ingredient#show"
   get "/ingredients" => "ingredients#index"
 
   get "/mypantry" => "mypantry#index"

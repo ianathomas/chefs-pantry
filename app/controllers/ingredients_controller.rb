@@ -1,6 +1,20 @@
 class IngredientsController < ApplicationController
   def index
-    @photos = Photo.all
+    @ingredients = Ingredient.all
     render :index
+  end
+
+  def create
+    @ingredient = Ingredient.create(
+      name: params[:name],
+      ingredient_type: params[:ingredient_type],
+      image_url: params[:image_url],
+    )
+    render :show
+  end
+
+  def show
+    @ingredient = Ingredient.find_by(id: params[:id])
+    render :show
   end
 end
