@@ -5,12 +5,15 @@ Rails.application.routes.draw do
   # root "articles#index"
   post "/users" => "users#create"
   post "/sessions" => "sessions#create"
+  
   post "/ingredient" => "ingredient#create"
+  patch "/ingredient/:id" => "ingredient#update"
+  delete "/ingredients/:id" => "ingredients#destroy"
 
-  get "/ingredient/:id" => "ingredient#show"
+  get "/ingredients/:id" => "ingredient#show"
   get "/ingredients" => "ingredients#index"
 
-  get "/mypantry" => "mypantry#index"
+  get "/my_pantry_items" => "my_pantry_items#index"
  
-
+  # get "/my_pantry_items", controller: "my_pantry_items", action: "index"
 end
