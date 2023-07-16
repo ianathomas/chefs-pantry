@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get "/ingredients" => "ingredients#index"
 
   get "/my_pantry_items" => "my_pantry_items#index"
+  post "/my_pantry_items" => "my_pantry_items#create"
  
   # get "/my_pantry_items", controller: "my_pantry_items", action: "index"
 end
