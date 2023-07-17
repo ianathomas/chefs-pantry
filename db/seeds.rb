@@ -10,9 +10,9 @@ ingredient2 = Ingredient.create!(name: "Garlic, Fresh", ingredient_type: "Vegeta
 ingredient3 = Ingredient.create!(name: "Olive Oil", ingredient_type: "Oil", image_url: "oliveoil.jpg", api_id: "api_id_dummy")
 ingredient4 = Ingredient.create!(name: "banana", ingredient_type: "Fruit", image_url: "banana.jpg", api_id: "9040")
 
-user1 = User.create!(name: "Randy", email: "randy.com", password: "password", image_url: "randy.jpg")
-user2 = User.create!(name: "Herb", email: "herb.com", password: "password", image_url: "herb.jpg")
-user3 = User.create!(name: "Ian", email: "ian.com", password: "password", image_url: "ian.jpg")
+user1 = User.create!(name: "Randy", email: "randy@email.com", password: "password", image_url: "randy.jpg")
+user2 = User.create!(name: "Herb", email: "herb@email.com", password: "password", image_url: "herb.jpg")
+user3 = User.create!(name: "Ian", email: "ian@email.com", password: "password", image_url: "ian.jpg")
 
 mypantryitem1 = MyPantryItem.create!(ingredient_id: 1, user_id: 1, amount: 5)
 mypantryitem2 = MyPantryItem.create!(ingredient_id: 2, user_id: 1, amount: 10)

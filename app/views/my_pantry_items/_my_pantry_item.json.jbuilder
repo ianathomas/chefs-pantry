@@ -7,3 +7,4 @@
 # json.ingredient_type my_pantry_item.ingredient_type
 json.ingredient my_pantry_item.ingredient
 json.amount my_pantry_item.amount
+json.user_id my_pantry_item.user_id
