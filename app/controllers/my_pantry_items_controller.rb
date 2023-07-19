@@ -58,4 +58,11 @@ class MyPantryItemsController < ApplicationController
       render json: {errors: @my_pantry_item.errors.full_messages}, status: :unprocessable_entity
     end
   end
+
+  def destroy
+    @my_pantry_item = MyPantryItem.find_by(id: params[:id])
+    pp @my_pantry_item
+    @my_pantry_item.destroy
+    render json: { message: "Pantry Item destroyed sussessfully" }
+  end
 end

@@ -8,13 +8,13 @@ Rails.application.routes.draw do
   
   post "/ingredient" => "ingredient#create"
   patch "/ingredient/:id" => "ingredient#update"
-  delete "/ingredients/:id" => "ingredients#destroy"
 
   get "/ingredients/:id" => "ingredient#show"
   get "/ingredients" => "ingredients#index"
 
   get "/my_pantry_items" => "my_pantry_items#index"
   post "/my_pantry_items" => "my_pantry_items#create"
+  delete "/my_pantry_items/:id" => "my_pantry_items#destroy"
  
   # get "/my_pantry_items", controller: "my_pantry_items", action: "index"
 end
